@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasiprabha Portfolio</title>
+
+    <style>
+        html {
+    scroll-behavior: smooth;
+}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+    padding-top: 80px;  /* adjust based on header height */
+
+        }
+
+        /* HEADER */
+        header {
+            position: fixed;   
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+       box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: lightblue;
+            padding: 15px 30px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #eaf6ff;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* CARD STYLE */
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 220px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* CONTACT */
+        .contact {
+            background-color: lightblue;
+        }
+        .contact a {
+            display: block;
+            
+            text-decoration: none;
+            margin: 5px 0;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1> Sasiprabha I</h1>
+       <nav>
+    <a href="#">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>Web Developer</h2>
+        <p>Aspiring software developer passionate about building efficient solutions</p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+        <h2>Education</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>B.E CSE</h3>
+                <p>Sri Ramakrishna Institute of Technology</p>
+                <p>CGPA: 8.48</p>
+            </div>
+
+            <div class="card">
+                <h3>HSC</h3>
+                <p>NSVV School</p>
+                <p>90%</p>
+            </div>
+
+            <div class="card">
+                <h3>SSLC</h3>
+                <p>NSVV School</p>
+                <p>69.2%</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+        <section id="skills">
+    <h2>Skills</h2>
+        <div class="cards">
+            <div class="card">C (Intermediate)</div>
+            <div class="card">Java (Intermediate)</div>
+            <div class="card">HTML & CSS</div>
+            <div class="card">MS PowerPoint</div>
+        </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section>
+        <h2>Project</h2>
+        <div class="card" style="margin:auto;">
+            <h3>ECG Arrhythmia Detection</h3>
+            <p>Machine learning-based web classifier for heart rhythm analysis.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+       <h2>Contact</h2>
+        <a href="mailto:sasiprabha.i.004@gmail.com">📧 Email</a>
+        <a href="tel:6374566179">📞 Phone</a>
+        <a href="https://www.linkedin.com/in/sasiprabha-i-7828b331a/" target="_blank">🔗 LinkedIn</a>
+        <a href="https://leetcode.com/u/sasiprabha_I/" target="_blank">💻 LeetCode</a>
+        <a href="https://www.codechef.com/users/sasiprabha_i" target="_blank">🍴 CodeChef</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- <p>© 2026 Sasiprabha</p>-->
+    </footer>
+
+</body>
+</html>
